@@ -9,6 +9,11 @@ The project idea belongs to Zuri. The project is being developed under Zuri’s 
 # Classic project
 (https://github.com/orgs/zuri-training/projects/419)
 
+## Branches
+Product Design <br />
+Front-End <br />
+Back-End <br />
+
 # Table of Contents
 General Information <br />
 Technologies Used <br />
