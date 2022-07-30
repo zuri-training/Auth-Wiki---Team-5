@@ -9,6 +9,15 @@ The project idea belongs to Zuri. The project is being developed under Zuri’s 
 # Classic project
 (https://github.com/orgs/zuri-training/projects/419)
 
+## Link to team roster
+### (https://docs.google.com/spreadsheets/d/1Oj3OVNha6ZB7HiJ2k6R_qJ97ynUDdYB4/edit?usp=sharing&ouid=106406755546135524470&rtpof=true&sd=true)
+## Link to team sheet
+### (https://docs.google.com/spreadsheets/d/19xiYTBeIr6JHzlSXGWqzSiizn6FhFQkO/edit?usp=sharing&ouid=106406755546135524470&rtpof=true&sd=true)
+## Link to Presentation Slides
+### (https://docs.google.com/presentation/d/1bpN89WSbWrrzEP9o5CzR6TzZMabjZt3N/edit?usp=sharing&ouid=106406755546135524470&rtpof=true&sd=true)
+## Link to Project Documentation
+### (https://docs.google.com/document/d/1YTNyTpnIPi5A4oDCZDQSd5j2mO-1Z2EhtmxahlAiZ-0/edit?usp=sharing)
+
 ## Branches
 Product Design <br />
 Front-End <br />
