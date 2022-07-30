@@ -1,4 +1,3 @@
-
 # Auth Wiki Team 5
 Auth Wiki 1.0 - A platform to give developers access to a library of authentication codes.
 
