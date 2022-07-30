@@ -4,9 +4,11 @@ Auth Wiki 1.0 - A platform to give developers access to a library of authenticat
 ## Back-End Developers Repository
 In a nutshell, these are individuals who are tasked with developing logic for the platform.
 
-
 # Acknowledgements
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
+
+## Link to DB Schema
+### (https://drive.google.com/file/d/1ZXzXeEBU1WVy8vFsrTjQQuQtVHqjQ1Mw/view?usp=sharing)
 
 # Table of Contents
 General Information <br />
