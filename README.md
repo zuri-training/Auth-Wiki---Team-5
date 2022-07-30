@@ -5,7 +5,7 @@ Auth Wiki 1.0 - A platform to give developers access to a library of authenticat
 
 In a nutshell, a product designer manages the product design process by studying customer needs and creating a solution to deliver an appropriate experience. Both UX and product design roles follow the five-stage design thinking process.
 
-#Link to figma board is:
+# Link to figma board is:
 ## (https://www.figma.com/file/8QCLbcTXYtgxIZfS2cD5SG/auth_wiki?node-id=0%3A1)
 
 # Acknowledgements
