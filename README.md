@@ -7,14 +7,14 @@ Auth Wiki 1.0 - A platform to give developers access to a library of authenticat
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
 
 # Table of Contents
-General Information
-Technologies Used
-Features
-Product Specification
-Usage
-Project Status
-Collaboration
-Contributors
+General Information <br />
+Technologies Used <br />
+Features <br />
+Product Specification <br />
+Usage <br />
+Project Status <br />
+Collaboration <br />
+Contributors <br />
 
 ## General Information
 Auth wiki is a platform that houses a library of authentication codes for multiple programming languages. 
