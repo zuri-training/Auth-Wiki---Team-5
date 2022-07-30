@@ -8,7 +8,7 @@ In a nutshell, these are individuals who are tasked with developing logic for th
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
 
 ## Link to DB Schema
-### (https://drive.google.com/file/d/1ZXzXeEBU1WVy8vFsrTjQQuQtVHqjQ1Mw/view?usp=sharing)
+### (https://drive.google.com/file/d/1ZwsTHjCHYjBjU_-KqC7tIt191aXepYmA/view?usp=sharing)
 
 # Table of Contents
 General Information <br />
