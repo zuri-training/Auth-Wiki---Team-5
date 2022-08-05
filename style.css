@@ -1,0 +1,99 @@
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em 1em;
+  font-family: 'Hind', sans-serif;
+}
+
+.navinput{
+  border: none;
+    width: 100%;
+    outline: none;
+}
+.logo {
+  color:#00B4D8;
+  font-size: 25px;
+  font-family: 'Pilcrow Rounded', sans-serif;
+}
+.logo>span{
+  color:#1E0B94;
+  font-size: 25px;
+  font-family: 'Pilcrow Rounded', sans-serif;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 2em;
+  color: #353434;
+  align-items: center;
+}
+
+li{
+  padding: 0.2em;
+  border-width: 0 0 6px 0 ;
+  border-style:solid ;
+  border-color:white;
+  font-family: 'Pilcrow Rounded', sans-serif;
+  font-size: 25px;
+}
+li:hover{
+  border-color: #4434A6;
+  /* padding-bottom: 0.1em; */
+  cursor: pointer;
+  
+}
+
+.totalcontainer{
+  background-image: url(images/backgroundimage.png);    
+    background-size: cover;     
+    background-position: center center;
+}.container {
+  margin: auto;
+  margin-top: 5%;
+  height: 70%;
+  width: 25%;
+  
+  
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 65%;
+  }
+}
+input {
+  margin: auto;
+  width: 98%;
+}
+h3 {
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Hind', sans-serif;
+}
+.formcontainer {
+  width: 95%;
+  padding: 1px;
+  margin: auto;
+}
+.registerbtn {
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  color: white;
+  background-color: #4434a6;
+}
+.imagecontainer {
+  margin: auto;
+  display: flex;
+  justify-content: center;  
+}
