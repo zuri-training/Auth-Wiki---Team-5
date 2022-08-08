@@ -369,6 +369,8 @@ div.enjoy{
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    justify-content: center;
+    
 
 }
 
@@ -377,6 +379,7 @@ div.enjoy{
     flex-direction: row;
     padding: 20px;
     margin: 0 auto;
+    
 }
 .dev_test img{
     padding: 10px;

@@ -8,7 +8,12 @@ body{
 }
 
 /* nav section */
-
+.logo {
+  color:#00B4D8;
+}
+.logo>span{
+  color:#1E0B94;
+}
 .nav-section{
   margin: 2% 5% 0;
   font-size: 25px;
