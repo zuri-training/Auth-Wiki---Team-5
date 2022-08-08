@@ -31,7 +31,7 @@ ul {
   gap: 32px;
   color: #353434;
   align-items: center;
-  margin-left: 350px;
+  margin-left: 200px;
 }
 input {
   border: none;
@@ -51,6 +51,13 @@ li {
 li:hover {
   border-color: #4434a6;
   cursor: pointer;
+}
+
+.logOut:hover {
+  background-color: #4434a6;
+}
+.logOut:focus {
+  background-color: #0a0431;
 }
 
 header {
@@ -114,7 +121,8 @@ p {
   margin-bottom: 64px;
 }
 
-.download {
+.download,
+.logOut {
   padding: 12px 16px 12px 16px;
   width: 160px;
   background: #1e0b94;
@@ -159,7 +167,6 @@ p {
 .icons {
   display: flex;
   gap: 15px;
-  /* position: absolute; */
   font-family: "Hind";
   font-style: normal;
   font-weight: 400;
@@ -168,28 +175,80 @@ p {
   margin-bottom: 64px;
 }
 
-/* #likes {
-  position: absolute;
-  top: 785px;
-  bottom: 0;
-  left: 873px;
-}
-
-#comments {
-   position: absolute;
-   bottom: 0;
-  top: 785px;
-  margin-left: 979px;
-  margin-right: 141px;
-}
-
-#downloads {
-  position: absolute;
-  top: 785px;
-  bottom: 0;
-  left: 1125px;
-} */
-
 .iconTxt {
   font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: auto;
+  }
+
+  .logo,
+  span {
+    font-size: 24px;
+    margin-top: -20px;
+    margin-left: 2px;
+  }
+  .logo > span {
+    font-size: 24px;
+  }
+  header {
+    position: absolute;
+    width: auto;
+    height: 29px;
+    left: 22px;
+    top: 76px;
+    right: 22px;
+    font-size: 15px;
+  }
+
+  ul {
+    all: unset;
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .httpBearer,
+  h3 {
+    top: 150px;
+    font-size: 14px;
+    width: auto;
+    margin-right: 22px;
+  }
+
+  .httpBearer,
+  .icons {
+    width: auto;
+    margin-left: 22px;
+  }
+  .documentation {
+    top: 350px;
+    font-size: 14px;
+    width: auto;
+    left: 22px;
+  }
+  .download {
+    margin-left: -100px;
+    margin-top: 70px;
+  }
+  .download,
+  .viewExample {
+    font-size: 12px;
+    height: 28px;
+    justify-content: center;
+    padding: 12px 16px 12px 16px;
+  }
+  .iconTxt {
+    font-size: 10px;
+  }
+  .icons {
+    margin-top: 800px;
+  }
+  #vector,
+  #moreSquare,
+  #smileys {
+    height: 10px;
+  }
 }
