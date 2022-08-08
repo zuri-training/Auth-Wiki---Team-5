@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0.2em 1em;
+}
+
+.logo {
+  font-family: "Pilcrow Rounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #00b4d8;
+  margin-left: 50px;
+}
+.logo > span {
+  font-family: "Pilcrow Rounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #1e0b94;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+  color: #353434;
+  align-items: center;
+  margin-left: 200px;
+}
+input {
+  border: none;
+  width: 100%;
+  outline: none;
+}
+li {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  padding: 0.2em;
+  border-width: 0 0 6px 0;
+  border-style: solid;
+  border-color: white;
+}
+li:hover {
+  border-color: #4434a6;
+  cursor: pointer;
+}
+
+.logOut:hover {
+  background-color: #4434a6;
+}
+.logOut:focus {
+  background-color: #0a0431;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 58px;
+  left: 100px;
+  right: 100px;
+  top: 160px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
+  color: #4334a6;
+}
+.httpBearer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 170px;
+  margin-left: 122px;
+  margin-right: 122px;
+  top: 246px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  color: #0c0b0b;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.documentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 847px;
+  height: 66px;
+  left: 122px;
+  top: 432px;
+  margin-bottom: 50px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+}
+p {
+  margin-top: 16px;
+}
+.buttons {
+  position: absolute;
+  margin-top: 700px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 400;
+  left: 122px;
+  margin-bottom: 64px;
+}
+
+.download,
+.logOut {
+  padding: 12px 16px 12px 16px;
+  width: 160px;
+  background: #1e0b94;
+  border-radius: 12px;
+  margin-right: 20px;
+  color: white;
+  border: none;
+}
+.download:hover {
+  background-color: #4434a6;
+}
+.download:focus {
+  background-color: #0a0431;
+}
+.download:disabled {
+  background-color: #5d5c5c;
+}
+
+.viewExample {
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border-color: #00b4d8;
+  padding: 12px 16px 12px 16px;
+  background-color: white;
+  color: #00b4d8;
+}
+
+.viewExample:hover {
+  color: #005a6c;
+  border-color: #005a6c;
+}
+.viewExample:focus {
+  color: #00242b;
+  border-color: #00242b;
+}
+.viewExample:disabled {
+  color: #5d5c5c;
+  border-color: #5d5c5c;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 700px;
+  margin-left: 873px;
+  margin-bottom: 64px;
+}
+
+.iconTxt {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: auto;
+  }
+
+  .logo,
+  span {
+    font-size: 24px;
+    margin-top: -20px;
+    margin-left: 2px;
+  }
+  .logo > span {
+    font-size: 24px;
+  }
+  header {
+    position: absolute;
+    width: auto;
+    height: 29px;
+    left: 22px;
+    top: 76px;
+    right: 22px;
+    font-size: 15px;
+  }
+
+  ul {
+    all: unset;
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .httpBearer,
+  h3 {
+    top: 150px;
+    font-size: 14px;
+    width: auto;
+    margin-right: 22px;
+  }
+
+  .httpBearer,
+  .icons {
+    width: auto;
+    margin-left: 22px;
+  }
+  .documentation {
+    top: 350px;
+    font-size: 14px;
+    width: auto;
+    left: 22px;
+  }
+  .download {
+    margin-left: -100px;
+    margin-top: 70px;
+  }
+  .download,
+  .viewExample {
+    font-size: 12px;
+    height: 28px;
+    justify-content: center;
+    padding: 12px 16px 12px 16px;
+  }
+  .iconTxt {
+    font-size: 10px;
+  }
+  .icons {
+    margin-top: 800px;
+  }
+  #vector,
+  #moreSquare,
+  #smileys {
+    height: 10px;
+  }
+}
