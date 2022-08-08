@@ -22,17 +22,6 @@ ul{
   color: #353434;
   align-items: center;
 }
-.search-bar{
-  border: 1px solid grey;
-  display: flex;
-  align-items: center;
-  padding: 0.5em;
-  width: 300px;
-  justify-content: space-between;
-  border-radius: 5px;;
-  gap: 2px;
-
-}
 .navinput{
   border: none;
   width: 100%;
