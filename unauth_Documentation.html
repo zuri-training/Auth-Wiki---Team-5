@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation Page</title>
     <link rel="stylesheet" href="unauth_Documentation.css" />
-    <script src="Documentation.js"></script>
     <script src="https://use.fontawesome.com/96d57cb5c7.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap"
@@ -15,16 +14,19 @@
   </head>
  <main>
   <nav>
-    <div class="logo"><span>auth</span>Wiki</div>
+  <a href="index.html"><div class="logo"><span>auth</span>Wiki</div></a>
     <div class="menu-container">
       <ul>
-        <li>Home</li>
-        <li>Library</li>
-        <li>Contact us</li>
-        <li>Documentation</li>
-        <button class="getStarted">Get Started</button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="unauth_documentation.html">Documentation</a></li>
+        <a href="SignUp.html"><button class="getStarted">Get Started</button></a>
       </ul>
     </div>
+    <div class="hamburger-menu">
+      <img src="images/icon.svg" alt="">
+  </div>
   </nav>
   <hr>
   <body>
@@ -77,14 +79,15 @@
       </p>
     </div>
     <div class="buttons">
-      <button class="download">Download</button>
+      <a href="SignUp.html"><button class="download">Download</button></a>
       <button class="viewExample">View Example</button>
     </div>
     <div class="icons">
-      <i id="likes"> <img id="vector" src="Vector.svg" alt="likes"><span class="iconTxt">1.2k likes</span></i>
-      <i id="comments"><img id= "moreSquare" src="more-square.png" alt="comment"><span class="iconTxt">800 comments</span></i>
-      <i id="downloads"><img id="smileys" src="smileys.png" alt="downloads"><span class="iconTxt">500 Vivvera eget</span></i>
+      <i id="likes"><img id="vector" src="Documentation Images/Vector.svg" alt="likes"><span class="iconTxt" >1.2k likes</span></i>
+      <i id="comments"><img id= "moreSquare" src="Documentation Images/more-square.png" alt="comment"><span class="iconTxt">800 comments</span></i>
+      <i id="downloads"><img id="smileys" src="Documentation Images/smileys.png" alt="downloads"><span class="iconTxt">500 Vivvera eget</span></i>
     </div>
+    <script src="Documentation.js" defer></script>
   </body>
  </main>
 </html>

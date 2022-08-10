@@ -26,6 +26,7 @@ nav {
   color: #1e0b94;
 }
 ul {
+  text-decoration: none;
   list-style-type: none;
   display: flex;
   gap: 32px;
@@ -38,7 +39,12 @@ input {
   width: 100%;
   outline: none;
 }
+li{
+  text-decoration: none;
+}
 li {
+  text-decoration: none;
+  /* list-style-type: none; */
   font-family: "Hind";
   font-style: normal;
   font-weight: 400;
@@ -52,12 +58,19 @@ li:hover {
   border-color: #4434a6;
   cursor: pointer;
 }
-
+a{
+  text-decoration: none;
+  color: #353434;
+}
 .logOut:hover {
   background-color: #4434a6;
 }
 .logOut:focus {
   background-color: #0a0431;
+}
+
+.hamburger-menu{
+  display: none;
 }
 
 header {
@@ -179,7 +192,10 @@ p {
   font-size: 16px;
 }
 
-@media screen and (max-width: 480px) {
+
+
+
+@media screen and (max-width: 900px) {
   main {
     width: auto;
   }
@@ -193,12 +209,13 @@ p {
   .logo > span {
     font-size: 24px;
   }
+  
   header {
     position: absolute;
     width: auto;
     height: 29px;
     left: 22px;
-    top: 76px;
+    top: 120px;
     right: 22px;
     font-size: 15px;
   }
@@ -207,27 +224,33 @@ p {
     all: unset;
     display: none;
   }
-  hr {
+  /* hr {
     display: none;
-  }
+  } */
   .httpBearer,
   h3 {
     top: 150px;
     font-size: 14px;
     width: auto;
-    margin-right: 22px;
+    margin: 22px;
   }
-
-  .httpBearer,
-  .icons {
+  .httpBearer, .icons{
     width: auto;
     margin-left: 22px;
   }
+  /* .hamburger-menu{
+    position: fixed;
+  } */
+ 
   .documentation {
     top: 350px;
     font-size: 14px;
     width: auto;
     left: 22px;
+  }
+  .button{
+    display: flex;
+    flex-direction: column;
   }
   .download {
     margin-left: -100px;
