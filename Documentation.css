@@ -58,7 +58,10 @@ li:hover {
   border-color: #4434a6;
   cursor: pointer;
 }
-
+a{
+  text-decoration: none;
+  color: #353434;
+}
 .logOut:hover {
   background-color: #4434a6;
 }
@@ -212,7 +215,7 @@ p {
     width: auto;
     height: 29px;
     left: 22px;
-    top: 76px;
+    top: 120px;
     right: 22px;
     font-size: 15px;
   }
@@ -221,9 +224,9 @@ p {
     all: unset;
     display: none;
   }
-  hr {
+  /* hr {
     display: none;
-  }
+  } */
   .httpBearer,
   h3 {
     top: 150px;
@@ -244,6 +247,10 @@ p {
     font-size: 14px;
     width: auto;
     left: 22px;
+  }
+  .button{
+    display: flex;
+    flex-direction: column;
   }
   .download {
     margin-left: -100px;
