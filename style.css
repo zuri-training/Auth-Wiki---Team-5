@@ -254,6 +254,9 @@ gap:4%;
 .section-4 > *{
 flex-basis:48%;
 }
+.container p{
+    font-size: 1.5rem
+    }
 }
 
 /*Onwubiko Okem Precious*/
