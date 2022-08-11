@@ -212,11 +212,11 @@ display:  block;
 text-decoration: none;
 margin-top: 1rem;
 text-align: center;
-background-color: blue;
+background-color: #1E0B94;
 
 }
 .anchor:hover{
-background-color: blue;
+background-color: #1E0B94;
 }
 .section-1 .left-part1 span{
     color: blue;
