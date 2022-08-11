@@ -16,6 +16,10 @@ nav{
     font-family: 'Hind Guntur', sans-serif;
     border-bottom: 1px solid #000;
   }
+  .menu-container ul li a{
+    text-decoration: none;
+    color: #000;
+  }
   .hamburger-menu{
     display: none;
   }

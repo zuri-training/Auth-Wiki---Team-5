@@ -28,6 +28,11 @@ ul{
   outline: none;
   
 }
+.menu-container ul li a{
+  text-decoration: none;
+  color: black;
+
+}
 li{
   padding: 0.2em;
   border-width: 0 0 6px 0 ;
