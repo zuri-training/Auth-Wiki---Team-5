@@ -39,7 +39,7 @@ input {
   width: 100%;
   outline: none;
 }
-li{
+li {
   text-decoration: none;
 }
 li {
@@ -58,11 +58,11 @@ li:hover {
   border-color: #4434a6;
   cursor: pointer;
 }
-a{
+a {
   text-decoration: none;
   color: #353434;
 }
- 
+
 .logOut:hover {
   background-color: #4434a6;
 }
@@ -70,7 +70,7 @@ a{
   background-color: #0a0431;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 
@@ -193,9 +193,6 @@ p {
   font-size: 16px;
 }
 
-
-
-
 @media screen and (max-width: 900px) {
   main {
     width: auto;
@@ -210,7 +207,7 @@ p {
   .logo > span {
     font-size: 24px;
   }
-  
+
   header {
     position: absolute;
     width: auto;
@@ -245,19 +242,19 @@ p {
     width: auto;
     margin: 22px;
   }
-  .httpBearer, .icons{
+  .httpBearer,
+  .icons {
     width: auto;
     margin-left: 22px;
   }
-  
- 
+
   .documentation {
     top: 350px;
     font-size: 14px;
     width: auto;
     left: 22px;
   }
-  .button{
+  .button {
     display: flex;
     flex-direction: column;
   }
