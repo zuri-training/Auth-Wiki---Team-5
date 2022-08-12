@@ -228,9 +228,20 @@
       all: unset;
       display: none;
     }
-    /* hr{
+
+    .hamburger-menu {
+      display: block;
+    }
+    .hamburger-menu img {
+      height: 10px;
+      width: 18px;
+      position: absolute;
+      left: 90.5%;
+      top: 5%;
+    }
+    hr{
       display: none;
-    } */
+    }
     .getStarted{
       display: none;
     }
