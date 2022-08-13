@@ -1,7 +1,9 @@
+{% extends 'base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
+{% block content %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,27 +19,7 @@
   </head>
   <body>
     
-    <nav>
-      <div class="logo"><span>auth</span>Wiki</div>
-      <div class="search-bar">
-        <input class="navinput" type="search" name="" id="" placeholder="search">
-        <img src="{% static 'img/magnifying-glass-solid(1).svg' %}" alt="" width="15px">
-          
-      </div>
-      <div class="menu-container">
-          <ul>
-              <li>Home</li>
-              <li>Library</li>
-              <li>Contact us</li>
-              <li>Documentation</li>
-          </ul>
-      </div>
-     <a href="{% url 'login' %}"><div class="get-started">Get Started</div></a> 
-        <div class="hamburger-menu">
-            <img src="images/icon.svg" alt="">
-        </div>
-  </nav>
-  <hr>
+  
     <div class="totalcontainer">
       <div class="container">
         <h3>
@@ -98,5 +80,6 @@
       </div>
     </div>
    <script src="{% static 'login.js' %}" defer></script>
+{% endblock content %}
   </body>
 </html>

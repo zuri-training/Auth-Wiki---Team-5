@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/unauthcontact.css' %}">
+    <script src="script.js" defer></script>
     <link href="https://api.fontshare.com/v2/css?f[]=hind@500&f[]=pilcrow-rounded@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6e0bdeca38.js" crossorigin="anonymous"></script>
-    <title>Contact Us</title>
+    <title>project nav</title>
 </head>
 <body>
-    
-{% comment %} {% block content %} {% endcomment %}
-        
-     <section id="main">
+ 
+
+    <section id="main">
         <div class="main-text">
             <h1 id="contact">How can we <span>help you</span>?</h1>
             <h4>Explore our Help Desk to learn more on how Auth_Wiki
@@ -29,17 +30,12 @@
                 {% csrf_token %}
                 <label for="enquiries">Type of enquiry</label>
                 <select id="enquiries">
-                    <option value="" selected disabled hidden></option>
-                    <option value="Code Error">General Error</option>
-                    <option value="Code Error">Language Error</option>
-                    <option value="Code Error">Compatibility Error</option>
-                    <option value="Code Error">Other</option>
+                    <option value="" selected disabled hidden>Select an Error Type</option>
+                    <option value="Code Error">Code Error</option>
+                    <option value="Code Error">Other...</option>
                 </select>
-                <label for="username">
-                    <input type="text" placeholder="Username">
-                </label>
                 <label for="email">
-                    <input type="email" placeholder="xyz@gmail.com">
+                    <input type="email" placeholder="xyz@gmail.com" required>
                 </label>
                 <label for="help text">
                     <textarea id="multiline" placeholder="What can we help you with?" rows="12" cols="35"></textarea>
@@ -54,16 +50,16 @@
 
         <div class="boxes">
             <div class="box-one">
-                <h2><a href="#">Features</a></h2>
-                <h4>Download code languages</h4>
+                <h2><a href="{% url 'library' %}">Libraries</a></h2>
+                <h5><a href="{% url 'library' %}">See multiple authentication codes</a></h5>
            </div>
            
         <div class="box-two">
-            <h2><a href="#">Documentation</a></h2>
-            <h4><a href="#">Watch tutorials on how it works</a></h4>
+            <h2><a href="{% url 'documentation0' %}">Documentation</a></h2>
+            <h5><a href="{% url 'documentation0' %}">See tutorials on how it works</a></h5>
         </div>
         </div>
-    </section>
-{% endblock content %}
+    </section> 
+{% endblock content %}    
 </body>
 </html> 

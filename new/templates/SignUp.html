@@ -1,8 +1,10 @@
+{% extends 'base.html' %}
 {% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% block content %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +14,7 @@
     <title>Sign Up</title>
 </head>
 <body> 
-    <div>
-        <nav>
-            <div class="logo">
-                <img class="logo" src="{% static 'images/authwikilogo.jpg' %}" alt="authwikilogo">
-            </div>
-            <div class="menu-container">
-                <ul>
-                    <li>Home</li>
-                    <li>Library</li>
-                    <li>Contact us</li>
-                    <li>Documentation</li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+  
     <section>
     <div class="box">
         <div class="text-">
@@ -91,6 +79,6 @@
             ><span style="color: #1e0b94"> Sign In</span></a
           >
         </p>
-    
+{% endblock content %}
 </body>
 </html>

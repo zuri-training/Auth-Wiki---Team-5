@@ -1,4 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +12,7 @@
 </head>
 <body>
     
+{% block content %}
     <main>
         <div class="container">
             <div class="section-1">
@@ -18,21 +21,6 @@
                     <h2 class="head">Take your software development to another level</h3>
                     <p>Build with speed while maintaining the best practices with our <span>authentication  samples codes</span></p>
                     <div>
-                     
-                        {% if user.is_authenticated %}
-                            Hi {{ user.username }}!
-                            <p><a href="{% url 'logout' %}">Log Out</a></p>
-                        {% else %}
-                            <p>You are not logged in</p>
-                            <a href="{% url 'login' %}">Log In</a> |
-                            <a href="{% url 'signup' %}">Sign Up</a>
-                        {% endif %}
-                       
-                    <!--        
-                    <a class="anchor"href="#">Sign in</a>
-                    <a class="anchor"href="#">Library</a>
-                    </div>
-                    -->
                 </div>
                 <div class="right-part1">
                     <img src="{% static 'images/Hero section Image.png' %}" alt="Hero">
@@ -75,7 +63,7 @@
             <h2>How it works</h2>
             <div class="sub_first_flex">
                 <div>
-                    <h3 class="jointxt">Join <span class="auth">auth</span><span class="wiki">wiki</span> <img src="right_1.png" class="right_1">
+                    <h3 class="jointxt">Join <span class="auth">auth</span><span class="wiki">wiki</span> <img src="{% static 'images/right_1.png' %}" class="right_1">
                     </h3>
                     <img src="{% static 'images/01.png' %}" class="first_icon first_icon1">           
                 </div>
@@ -111,7 +99,7 @@
                 <a href="#"><h2>AuthWiki-HTTP-Bearer</h2>
                 <p>HTTP Bearer authentication
                 strategy for Authwiki</p></a>
-                <div class="nums" ><img src="down.png" class="ico down1"><h4>880,654</h4>
+                <div class="nums" ><img src="{% static 'images/down.png' %}" class="ico down1"><h4>880,654</h4>
                     <img src="{% static 'images/thumbsup.png' %}" class="ico thumb1"><h4 class="adj1">88,590</h4>
                     <img src="{% static 'images/thumbsdown.png' %}" class="ico thumb2"><h4>500</h4></div>             
             </div>
@@ -167,7 +155,7 @@
     <div class="fifth_flex">
         <img src="{% static 'copy.png' %}">    
     </div>
-
+{% endblock content %}
 
    
 </body>
