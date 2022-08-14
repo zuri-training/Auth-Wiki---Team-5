@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em 1em;
+  font-family: 'Hind Guntur', sans-serif;
+}
+
+.logo {
+  color:#00B4D8;
+}
+.logo>span{
+  color:#1E0B94;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 2em;
+  color: #353434;
+  align-items: center;
+}
+.search-bar{
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  width: 300px;
+  justify-content: space-between;
+  border-radius: 5px;;
+  gap: 2px;
+
+}
+.navinput{
+  border: none;
+  width: 100%;
+  outline: none;
+  
+}
+li{
+  padding: 0.2em;
+  border-width: 0 0 6px 0 ;
+  border-style:solid ;
+  border-color:white;
+}
+li:hover{
+  border-color: #4434A6;
+  /* padding-bottom: 0.1em; */
+  cursor: pointer;
+  
+}
+nav .get-started{
+  padding: 0.3em 1.5em;
+  color: #FFFFFF;
+  background: #4434A6;
+  border-radius: 12px;
+}
+.hamburger-menu{
+  display: none;
+}
+
+@media screen and (max-width: 900px){
+  .search-bar{
+      display: none;
+  }
+
+  nav .get-started{
+      display: none;
+  }
+  .hamburger-menu{
+      display: block;
+  }
+  nav ul{
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      align-items: flex-start;
+      right: 1em;
+      padding: 1.2em 0;
+      border-radius: 0.3em;
+      box-shadow: 0 0 4px black;
+      width: 11em;
+      
+  }
+  .show-ul{
+      display: flex;
+  }
+  li{
+      width: 100%;
+      padding: 0.5em 1.2em;
+      border: none;
+  }
+  li:hover{
+      background: grey;
+      
+  }
+}
+
+.totalcontainer{
+  background-image: url(images/backgroundimage.png);    
+    background-size: cover;     
+    background-position: center center;
+}.container {
+  margin: auto;
+  margin-top: 5%;
+  height: 70%;
+  width: 25%;
+  
+  
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 65%;
+  }
+}
+input {
+  margin: auto;
+  width: 98%;
+}
+h3 {
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Hind', sans-serif;
+}
+.formcontainer {
+  width: 95%;
+  padding: 1px;
+  margin: auto;
+}
+.registerbtn {
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  color: white;
+  background-color: #4434a6;
+}
+.imagecontainer {
+  margin: auto;
+  display: flex;
+  justify-content: center;  
+}
