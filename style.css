@@ -14,6 +14,8 @@ body{
 
 
 
+
+
 .logo {
     color:#00B4D8;
   }
@@ -290,7 +292,23 @@ flex-basis:48%;
     }
 }
 
+
 /*Onwubiko Okem Precious*/
+
+footer .blackline{
+    display: block;
+    width: 50%;
+    background-color: black;
+    height: 6px;
+    border-radius: 16px;
+    position: relative;
+    top: 60%;
+    margin: 0 auto;
+}
+
+footer h1{
+    display: none;
+}
 
 .first_flex h2{
     color: #1E0B94;
@@ -430,7 +448,7 @@ footer{
 
 footer h2{
     position: relative;
-    top: 120px;
+    top: 100px;
     font-size: 1.1em;
 }
 
@@ -512,6 +530,10 @@ footer h2{
     font-family: 'Hind', sans-serif;
 }
 
+.blackline{
+    display: none;
+}
+
 .down1{
     position: relative;
     left: 7px;
@@ -577,6 +599,15 @@ a:hover{
 }
 .steal{
     display: none;}
+
+
+
+@media(min-width: 420px){
+
+    footer .blackline{
+        display: none;
+    }
+}    
 
 @media(min-width: 1360px){
 
@@ -831,13 +862,32 @@ a:hover{
         font-weight: 500;
         font-size: 30px;
         color: white;  
-        width: 100%;      
+        width: 100%;
+        margin-top: 300px;      
     }
 
     footer h2{
-        margin-top: 300px;
         position: relative;
-        top: 250px;
+        top: 170px;
+    }
+
+    footer h1{
+        font-size: 32px;
+        font-weight: 600;
+        font-family: 'Pilcrow Rounded', sans-serif;
+        line-height: 38px;
+        color: #FFFFFF;
+        position: relative;
+        top: 60%;
+        display: block;
+    }
+
+    footer span{
+        color: #00B4D8 !important;
+    } 
+
+    footer .blackline{
+        display: none;
     }
 
 }
