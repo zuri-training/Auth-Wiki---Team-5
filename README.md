@@ -6,6 +6,9 @@ Auth Wiki 1.0 - A platform to give developers access to a library of authenticat
 # Acknowledgements
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
 
+# Link to final project video
+https://drive.google.com/file/d/1RuBKYmvRRJKCGhBAw2bUsejUFPfw72cq/view?usp=sharing
+
 # Classic project
 (https://github.com/orgs/zuri-training/projects/419)
 
