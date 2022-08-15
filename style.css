@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
 
 *{
-/*border: 0;*/
-/* margin: 0; */
 padding: 0;
 box-sizing: border-box;
 }
+
+body{
+    background-image: url(images/backgroundimage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
 .logo {
     color:#00B4D8;
   }

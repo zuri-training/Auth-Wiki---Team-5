@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image:url(images/bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    font-family: 'Hind', sans-serif;
+    border-bottom: 1px solid #4434A6;
+}
+
+
+.logo {
+    color:#00B4D8;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.logo > span{
+    color:#1E0B94;
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    color: #353434;
+    align-items: center;
+    padding-right: 80px;
+}
+input{
+    border: none;
+    width: 100%;
+    outline: none; 
+}
+
+
+li{
+    padding: 0.2em;
+    border-width: 0 0 6px 0 ;
+    border-style: solid;
+    border-color: white;
+}
+li:hover{
+    border-color: #4434A6;
+    cursor: pointer;   
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hamburger-menu{
+    display: none;
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #1E0B94;
+    margin-right: 40px;
+    border-radius: 8px;
+}
+.button > a{
+    color: #FFFFFF;
+}
+.button:hover{
+    background-color: #4434A6;
+}
+
+
+/*
+Onwubiko Okem Precious*/
+
+
+.sample_page{
+
+    padding: 70px;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Hind', sans-serif;
+    line-height: 57.6px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 24px;
+    font-family: 'Hind', sans-serif;
+    line-height: 28.8px;
+    font-weight: 400;
+
+}
+
+.para{
+    padding: 10px;
+}
+
+.authwiki{
+    width: 50%;
+}
+
+.auth{
+    color: #1E0B94;
+}
+.wiki{
+    color: #00B4D8;
+}
+
+
+.below{
+    margin-bottom: 10px;
+}
+
+button{
+    width: 227px;
+    height: 52px;
+    border-radius: 12px;
+    padding: 12px 16px 12px 16px;
+    background-color: #1E0B94;
+    color: white;
+    font-size: 18px;
+    font-family: 'Hind',sans-serif;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 10px;
+    border-style: none;
+}
+
+.blue_corners{
+    width: 675px;
+    height: 536px;
+    background-color: #CAC5EB;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.code_view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.whiteboard{
+    width: 585px;
+    height: 368px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.write_code h2{
+    font-size: 48px;
+    font-family: 'Hind',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px;
+    color: #1E0B94;
+}
+
+img.star{
+    position: relative;
+    left: 100%;
+    bottom: 130px;
+    opacity: 0.4;
+}
+
+.blueline{
+    height: 368px;
+    width: 12px;
+    background-color: #1E0B94;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+    right: 29%;
+}
+
+
+
+
+
+
+
+
+/*
+Onwubiko Okem Precious*/
