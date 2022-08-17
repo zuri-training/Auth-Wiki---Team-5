@@ -5,6 +5,9 @@ Auth Wiki 1.0 - A platform to give developers access to a library of authenticat
 # Link to the site
 (http://52.21.130.244:8000/)
 
+Username: authwiki5@gmail.com
+Password: thebestserver5
+
 # Acknowledgements
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
 
