@@ -2,6 +2,8 @@
 # Auth Wiki Team 5
 Auth Wiki 1.0 - A platform to give developers access to a library of authentication codes.
 
+# Link to the site
+(http://52.21.130.244:8000/)
 
 # Acknowledgements
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
