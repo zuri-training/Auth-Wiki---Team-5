@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation Page</title>
     <link rel="stylesheet" href="{% static 'css/Documentation.css' %}" />
+    <script src="{% static 'script.js' %}" defer></script>
     <script src="https://use.fontawesome.com/96d57cb5c7.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap"
@@ -19,6 +20,7 @@
     <header>
       <h2>AUTH WIKI HTTP BEARER</h2>
     </header>
+    <section>
     <div class="httpBearer">
       <h3>HTTP Bearer authentication strategy for AuthWiki.</h3>
       <p>
@@ -64,16 +66,35 @@
         consectetur.
       </p>
     </div>
+    <div class="bottom-buttons">
     <div class="buttons">
       <button class="download">Download</button>
       <button class="viewExample">View Example</button>
     </div>
     <div class="icons">
-      <i id="likes"> <img id="vector" src="{% static 'images/Vector.svg' %}" alt="likes"><span class="iconTxt">1.2k likes</span></i>
-      <i id="comments"><img id="moreSquare" src="{% static 'images/more-square.png' %}" alt="comment"><span class="iconTxt">800 comments</span></i>
-      <i id="downloads"><img id="smileys" src="{% static 'images/smileys.png' %}" alt="downloads"><span class="iconTxt">500 Vivvera eget</span></i>
+      <div
+  data-lyket-type="updown"
+  data-lyket-id="my-second-post"
+  data-lyket-namespace="blog"
+></div>
+
+<div
+data-lyket-type="like"
+data-lyket-id="my-third-post"
+data-lyket-namespace="blog"
+data-lyket-template="twitter"
+></div>
+
+<div
+  data-lyket-type="clap"
+  data-lyket-id="my-third-post"
+  data-lyket-namespace="blog"
+  data-lyket-template="medium"
+></div> 
     </div>
-    <script src="{% static 'Documentation.js' %}" defer></script>
+  </div>
+</section>
+  <footer><script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_ddb337c682298643e76fce4b63eca3" defer></script></footer>
   </body>
 {% endblock content %}
 </html>

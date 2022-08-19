@@ -1,277 +1,218 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+/* 
+ background: #4434A6;
+ background: linear-gradient(0deg, #1E0B94, #1E0B94),
+linear-gradient(0deg, #00B4D8, #00B4D8);
+*/
+*, *::after, *::before{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  nav {
-    margin-top: 40px;
+}
+.html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Hind', sans-serif;
+    font-family: 'Pilcrow Rounded', sans-serif;
+}
+/* nav{
     display: flex;
     align-items: center;
-    padding: 0.2em 1em;
-  }
-  
-  .logo {
-    font-family: "Pilcrow Rounded";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    color: #00b4d8;
-    margin-left: 50px;
-  }
-  .logo > span {
-    font-family: "Pilcrow Rounded";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    color: #1e0b94;
-  }
-  ul {
-    text-decoration: none;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    padding: 0.5em 1em;
+    font-family: 'Hind', sans-serif;
+    border-bottom: 1px solid #4434A6;
+} */
+.logo {
+    color:#00B4D8;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.logo > span{
+    color:#1E0B94;
+    font-size: 25px;
+}
+ul{
     list-style-type: none;
     display: flex;
-    gap: 32px;
+    gap: 2em;
     color: #353434;
     align-items: center;
-    margin-left: 200px;
-  }
-  input {
+    padding-right: 80px;
+}
+input{
     border: none;
     width: 100%;
-    outline: none;
-  }
-  li{
-    text-decoration: none;
-  }
-  li {
-    text-decoration: none;
-    /* list-style-type: none; */
-    font-family: "Hind";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
+    outline: none; 
+}
+li{
     padding: 0.2em;
-    border-width: 0 0 6px 0;
+    border-width: 0 0 6px 0 ;
     border-style: solid;
     border-color: white;
-  }
-  li:hover {
-    border-color: #4434a6;
-    cursor: pointer;
-  }
-  a{
+}
+li:hover{
+    border-color: #4434A6;
+    /* padding-bottom: 0.1em; */
+    cursor: pointer;   
+}
+ul > li > a:hover{
     text-decoration: none;
-    color: #353434;
-  }
-  .logOut:hover {
-    background-color: #4434a6;
-  }
-  .logOut:focus {
-    background-color: #0a0431;
-  }
-  
-  .hamburger-menu{
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+}
+.hamburger-menu{
     display: none;
-  }
-  
-  header {
-    position: absolute;
+}
+.button{
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 58px;
-    left: 100px;
-    right: 100px;
-    top: 160px;
-    font-family: "Hind";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3em;
-    color: #4334a6;
-  }
-  .httpBearer {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    height: 170px;
-    margin-left: 122px;
-    margin-right: 122px;
-    top: 246px;
-    font-family: "Hind";
-    font-style: normal;
+    padding: 8px 15px;
+    background-color: #1E0B94;
+    margin-right: 40px;
+    border-radius: 8px;
+}
+.button > a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button > a:hover{
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #4434A6;
+}
+.viewExample{
+    border: 2px solid #1E0B94;
+    color: #0a0431;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.viewExample:hover{
+    border: 2px solid #1E0B94;
+    background-color: #1E0B94;
+    color: #FFFFFF;
+}
+section{
+  padding-top: 70px;
+  width: 85%;
+  margin: auto;
+}
+@media screen and (max-width: 900px){
+    .search-bar{
+        display: none;
+    }
+    nav .button{
+        margin-left: 25px;
+        text-align: center;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        right: 1em;
+        padding: 1.2em 0;
+        border-radius: 0.3em;
+        box-shadow: 0 0 4px black;
+        width: 11em;
+        height: 100%;
+        background-color: #FFFFFF;
+    }
+    .show-ul{
+        display: flex;
+    }
+    li{
+        width: 100%;
+        padding: 0.5em 1.2em;
+        border: none;
+    }
+    li:hover{
+        background: #CAC5EB;
+    }
+}
+.httpBearer {
     font-weight: 500;
     color: #0c0b0b;
   }
-  
-  h3 {
-    font-size: 36px;
+h3 {
+    font-size: 30px;
+    padding-top: 25px;
   }
-  
-  .documentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 847px;
-    height: 66px;
-    left: 122px;
-    top: 432px;
-    margin-bottom: 50px;
+h2{
+  text-align: center;
+  font-size: 35px;
+  color: #1E0B94;
+}
+.documentation {
+    width: 70%;
+  }
+p{
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+.buttons{
     font-family: "Hind";
-    font-style: normal;
-    font-weight: 500;
-  }
-  p {
-    margin-top: 16px;
-  }
-  .buttons {
-    position: absolute;
-    margin-top: 700px;
-    font-family: "Hind";
-    font-style: normal;
     font-weight: 400;
-    left: 122px;
-    margin-bottom: 64px;
-  }
-  
-  .download,
-  .logOut {
-    padding: 12px 16px 12px 16px;
-    width: 160px;
-    background: #1e0b94;
-    border-radius: 12px;
+    width: 40%;
+}
+.download {
+    padding: 12px 20px;
+    background: #aaa;
+    border-radius: 8px;
     margin-right: 20px;
     color: white;
     border: none;
-  }
-  .download:hover {
+}
+.download:hover {
     background-color: #4434a6;
-  }
-  .download:focus {
+}
+.download:focus {
     background-color: #0a0431;
-  }
-  .download:disabled {
+}
+.download:disabled {
     background-color: #5d5c5c;
-  }
-  
-  .viewExample {
-    width: 160px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    border-color: #00b4d8;
-    padding: 12px 16px 12px 16px;
-    background-color: white;
-    color: #00b4d8;
-  }
-  
-  .viewExample:hover {
-    color: #005a6c;
-    border-color: #005a6c;
-  }
-  .viewExample:focus {
-    color: #00242b;
-    border-color: #00242b;
-  }
-  .viewExample:disabled {
-    color: #5d5c5c;
-    border-color: #5d5c5c;
-  }
-  .icons {
+}
+.icons{
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.icons i{
+  margin-right: 15px;
+}
+.bottom-buttons{
     display: flex;
-    gap: 15px;
-    font-family: "Hind";
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 700px;
-    margin-left: 873px;
-    margin-bottom: 64px;
-  }
-  
-  .iconTxt {
-    font-size: 16px;
-  }
-  
-  
-  
-  
-  @media screen and (max-width: 900px) {
-    main {
-      width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+}
+@media screen and (max-width:900px){
+    .documentation{
+        width: 100%;
     }
-  
-    .logo,
-    span {
-      font-size: 24px;
-      margin-top: -20px;
-      margin-left: 2px;
+}
+@media screen and (max-width:900px){
+    .viewExample{
+        margin-top: 5px;
     }
-    .logo > span {
-      font-size: 24px;
-    }
-    
-    header {
-      position: absolute;
-      width: auto;
-      height: 29px;
-      left: 22px;
-      top: 120px;
-      right: 22px;
-      font-size: 15px;
-    }
-  
-    ul {
-      all: unset;
-      display: none;
-    }
-    /* hr {
-      display: none;
-    } */
-    .httpBearer,
-    h3 {
-      top: 150px;
-      font-size: 14px;
-      width: auto;
-      margin: 22px;
-    }
-    .httpBearer, .icons{
-      width: auto;
-      margin-left: 22px;
-    }
-    /* .hamburger-menu{
-      position: fixed;
-    } */
-   
-    .documentation {
-      top: 350px;
-      font-size: 14px;
-      width: auto;
-      left: 22px;
-    }
-    .button{
-      display: flex;
-      flex-direction: column;
-    }
-    .download {
-      margin-left: -100px;
-      margin-top: 70px;
-    }
-    .download,
-    .viewExample {
-      font-size: 12px;
-      height: 28px;
-      justify-content: center;
-      padding: 12px 16px 12px 16px;
-    }
-    .iconTxt {
-      font-size: 10px;
-    }
-    .icons {
-      margin-top: 800px;
-    }
-    #vector,
-    #moreSquare,
-    #smileys {
-      height: 10px;
-    }
-  }
+}

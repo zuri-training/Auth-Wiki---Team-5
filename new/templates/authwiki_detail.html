@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card-body">
+  <h2><span>{{ object.name }}</span></a></h2>
+  <h5><span>{{ object.created_date}}</span></a></h5>
+ <p><span>{{ object.description }}</span> </p>
+ <!--   <div class="icon">
+      <p class="download"><span class="material-symbols-outlined">download</span>0</p>
+      <p class="like"><span class="material-symbols-outlined">{{Authwiki.upvote}}thumb_up</span>0</p>
+      <p class="dislike"><span class="material-symbols-outlined">thumb_down</span>0</p>
+    </div>
+  </ul>
+-->
+<p>Back to <a href="{% url 'library' %}">All Articles</a>.</p>
+
+{% endblock content %}

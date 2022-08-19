@@ -6,15 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% block content %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>AuthWiki</title>
 </head>
 <body>
-    
-{% block content %}
     <main>
-        <div class="container">
+        <div class="container" style="background-image: url({% static 'images/signup_image.png' %})">
             <div class="section-1">
                 <div class="left-part1">
                         
@@ -153,8 +152,11 @@
     </div>
     <div class="steal"><img src="{% static 'images/trump.png' %}"></div>
     <div class="fifth_flex">
-        <img src="{% static 'copy.png' %}">    
+        {% comment %} <img src="{% static 'images/copy.png' %}">     {% endcomment %}
     </div>
+    <footer class="footer">
+        <h2>&copy; 2022 authWiki LTD</h2>        
+   </footer>
 {% endblock content %}
 
    

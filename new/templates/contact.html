@@ -15,7 +15,7 @@
 </head>
 <body>
     
-{% comment %} {% block content %} {% endcomment %}
+
         
      <section id="main">
         <div class="main-text">
@@ -25,24 +25,24 @@
             </h4>
         </div>
         <div class="textareas">
-            <form>
+            <form action="/Authwiki/contact-us/" method="POST">
                 {% csrf_token %}
-                <label for="enquiries">Type of enquiry</label>
+                <label for="enquiries"><b><small>Type of enquiry</span></small></b></label>
                 <select id="enquiries">
-                    <option value="" selected disabled hidden></option>
+                    <option value="" selected disabled hidden>Select a category</option>
                     <option value="Code Error">General Error</option>
                     <option value="Code Error">Language Error</option>
                     <option value="Code Error">Compatibility Error</option>
                     <option value="Code Error">Other</option>
                 </select>
-                <label for="username">
-                    <input type="text" placeholder="Username">
+                <label for="username"><b><small>Username</small></b>
+                    <input type="text" name="username" placeholder="Username (optional)">
                 </label>
-                <label for="email">
-                    <input type="email" placeholder="xyz@gmail.com">
+                <label for="email"><b><small>Email Required <span style="color:red">*</span></small></b>
+                    <input type="email" name="email" placeholder="xyz@gmail.com" required>
                 </label>
                 <label for="help text">
-                    <textarea id="multiline" placeholder="What can we help you with?" rows="12" cols="35"></textarea>
+                    <textarea id="multiline" name="content" placeholder="What can we help you with?" rows="12" cols="35"></textarea>
                 </label>
                 <input type="submit" value="Continue">
             </form>
@@ -60,7 +60,7 @@
            
         <div class="box-two">
             <h2><a href="#">Documentation</a></h2>
-            <h4><a href="#">Watch tutorials on how it works</a></h4>
+            <h4>Watch tutorials on how it works</h4>
         </div>
         </div>
     </section>

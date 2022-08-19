@@ -1,94 +1,107 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
-
-*{
-/*border: 0;*/
-/* margin: 0; */
-padding: 0;
-box-sizing: border-box;
+/* 
+ background: #4434A6;
+ background: linear-gradient(0deg, #1E0B94, #1E0B94),
+linear-gradient(0deg, #00B4D8, #00B4D8);
+*/
+/* Ayomide Daniel Ayeni */
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+.html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Hind', sans-serif;
+    font-family: 'Pilcrow Rounded', sans-serif;
+}
+/* nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    width: 100%;
+    background-color: white;
+    font-family: 'Hind', sans-serif;
+    border-bottom: 1px solid #4434A6;
+    z-index: 2;
+} */
 .logo {
+    display: inline;
     color:#00B4D8;
-  }
-  .logo>span{
-    color:#1E0B94;
-  }
-  .nav-section{
-    margin: 2% 5% 0;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    margin-left: 30px;
     font-size: 25px;
-  }
-  nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.2em 1em 0;
-  }
-  nav a{
-    color: black;
-    margin: 0 10px;
-  }
-  ul{
-      list-style-type: none;
-      display: flex;
-      gap: 2em;
-      color: #353434;
-      align-items: center;
-  }
-  .search-bar{
-      border: 1px solid grey;
-      display: flex;
-      align-items: center;
-      padding: 0.5em;
-      width: 300px;
-      justify-content: space-between;
-      border-radius: 5px;;
-      gap: 2px;
-  
-  }
-  input{
-      border: none;
-      width: 100%;
-      outline: none;
-  
-  }
-  li{
-      padding: 0.2em;
-      border-width: 0 0 6px 0 ;
-      border-style:solid ;
-      border-color:white;
-  }
-  li:hover{
-      border-color: #4434A6;
-      /* padding-bottom: 0.1em; */
-      cursor: pointer;
-  
-  }
-  li:active{
-    border-bottom: 7px solid #4434A6;
-  }
-  .get-started{
-      padding: 0.3em 1.5em;
-      color: #FFFFFF;
-      background: #4434A6;
-      border-radius: 12px;
-      text-decoration: none;
-    }
-  .hamburger-menu{
-    display: none;
 }
-.menu-container ul li a{
+.logo > span{
+    color:#1E0B94;
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    color: #353434;
+    align-items: center;
+    padding-right: 80px;
+}
+input{
+    border: none;
+    width: 100%;
+    outline: none; 
+}
+li{
+    padding: 0.2em;
+    border-width: 0 0 6px 0 ;
+    border-style: solid;
+    border-color: white;
+}
+li:hover{
+    border-color: #4434A6;
+    /* padding-bottom: 0.1em; */
+    cursor: pointer;   
+}
+ul > li > a:hover{
     text-decoration: none;
 }
-  
-  
-  @media screen and (max-width: 900px){
+a{
+    text-decoration: none;
+    color: #000;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+}
+.hamburger-menu{
+    display: none;
+}
+.button{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #1E0B94;
+    margin-right: 40px;
+    border-radius: 8px;
+}
+.button > a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button > a:hover{
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #4434A6;
+}
+@media screen and (max-width: 900px){
     .search-bar{
         display: none;
     }
-  
-    nav .get-started{
-        display: none;
+    nav .button{
+        margin-left: 25px;
+        text-align: center;
     }
     .hamburger-menu{
         display: block;
@@ -103,7 +116,8 @@ box-sizing: border-box;
         border-radius: 0.3em;
         box-shadow: 0 0 4px black;
         width: 11em;
-        
+        height: 100%;
+        background-color: #FFFFFF;
     }
     .show-ul{
         display: flex;
@@ -114,175 +128,206 @@ box-sizing: border-box;
         border: none;
     }
     li:hover{
-        background: grey;
-        
+        background: #CAC5EB;
     }
-  }
-.container{
- background:#fff url("./images/signup_image.png") no-repeat center/cover;
-
 }
-.section-1 .left-part-1 p{
-    margin-top: 1rem;
+.section-1, .section-2, .section-3, .section-4{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    width: 95%;
+    margin: auto;
 }
-
-h3{
-color: blue;
+.section-1{
+    padding-top: 100px;
 }
-p .span-1{
-    font-family: 'Pilcrow Rounded';
-    color:#1E0B94;
-
-}
-h3 .span-2{
-    font-family: 'Pilcrow Rounded';
-    color: #00B4D8;
-}
-h3 .span-1{
-    font-family: 'Pilcrow Rounded';
-    color: #1E0B94;
-}
-p .span-2{
-
-        font-family: 'Pilcrow Rounded';
-        color: #00B4D8;
+.left-part1{
+    width: 90%;
 }
 .head{
-font-weight: bold;
-color: blue;
-margin-bottom: 1rem;
+    color: #1E0B94;
+    font-size: 50px;
+    margin-bottom: 18px;
 }
-.section-1{
-padding:1rem;
-display: flex;
-justify-content: center;
+p{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
-.section-1 > *{
-margin-bottom:2rem;
-flex-basis:48%;
+p > span{
+    color: #1E0B94;
 }
 .right-part1 img{
-width:100%;
+    width: 100%;
 }
-
+.buttons{
+    padding-top: 20px;
+}
+.button-one{
+    display: none;
+}
+.headd{
+    color: #1E0B94;
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+.button-two{
+    background-color: #FFFFFF;
+    padding: 15px 70px;
+    border: 1px solid #1E0B94;
+    border-radius: 0.5em;
+    font-size: 16px;
+}
+.button-two > a{
+    color: #1E0B94;
+}
+.button-two:hover a{
+    color: #FFFFFF;
+}
+.button-two:hover{
+    background-color: #1E0B94;
+}
+.bottom-text{
+    font-size: 20px;
+}
+.bottom-text > span {
+    display: inline;
+    color:#1E0B94;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    font-size: 25px;
+}
+.bottom-text > span > span{
+    color:#00B4D8;
+    font-size: 25px;
+}
 
 .section-2{
-padding:1rem;
-display: flex;
+    height: 80vh;
 }
-.section-2 > *{
-margin-bottom:2rem;
-flex-basis:48%;
+.left-part-2{
+    width: 60%;
+}
+.head > span{
+    color: #00B4D8;
+}
+.other-text{
+    font-size: 30px;
+    line-height: 1.3em;
+}
+.other-text > span{
+    color: #1E0B94;
+}
+.other-text > span > span{
+    color: #00B4D8;
 }
 .right-part-2 img{
-    width: 100%;
+    width: 80%;
+    height: 400px;
+    margin-left: 10px;
 }
 
 
 .section-3{
-    padding:1rem;
-    display: flex;
-    justify-content:space-between ;
+    height: 80vh;
 }
-.section-3 > *{
-    margin-bottom:2rem;
-    flex-basis:48%;
-    }
 .left-part-3 img{
-    width: 100%;
+    width: 80%;
+    height: 400px;
 }
-
+.right-part-3{
+    width: 60%;
+}
 .section-4{
-padding:1rem;
-display: flex;
+    height: 80vh;
 }
-.section-4 > *{
-margin-bottom:2rem;
-flex-basis:48%;
+.left-part-4{
+    width: 60%;
 }
 .right-part-4 img{
-    width: 100%;
+    height: 450px;
+    width: 80%;
 }
 
-.anchor{
-padding: 0.5rem;
-border-radius: 0.5rem;
-width: 10rem;
-border: 1px solid #00B4D8;
-color: #00B4D8;
-display:  block;
-text-decoration: none;
-margin-top: 1rem;
-text-align: center;
-background-color: blue;
-
-}
-.anchor:hover{
-background-color: blue;
-}
-.section-1 .left-part1 span{
-    color: blue;
-}
-
+@media screen and (max-width:900px) {
+    .section-1{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .left-part1{
+        width: 85%;
+        margin: auto;
+        padding-top: 70px;
+    }
+    .head{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .right-part1{
+        width: 85%;
+        margin: auto;
+        padding-top: 35px;
+    }
+    .right-part1 img{
+        height: 250px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .section-2{
+        padding-top: 120px;
+        flex-direction: column;
+    }
+    .headd{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .left-part-2{
+        width: 85%;
+        margin: auto;
+    }
+    .other-text{
+        font-size: 20px;
+    }
+    .right-part-2 img{
+        height: 250px;
+    }
+    .section-3{
+        margin-top: 150px;
+        flex-direction: column-reverse;
+    }
+    .left-part-3 img{
+        height: 250px;
+    }
+    .right-part-3{
+        width: 85%;
+        margin: auto;
+    }
+    .section-4{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .left-part-4{
+        width: 85%;
+        margin: auto;
+    }
+    .right-part-4 img{
+        height: 250px;
+    }
+    .div_king{
+        padding-top: 100px;
+        width: 85%;
+        margin: auto;
+    }
+} 
+/* Ayomide's code stops here*/
 
 /*Tablet Device  and mobile*/
-@media(min-width:650px){
-.section-1{
-display:flex;
-flex-flow:row wrap;
-align-items:center;
-gap:4%;
-}
-.section-1 > *{
-flex-basis:48%;
-}
-
-
-.section-2{
-display:flex;
-flex-flow:row wrap;
-align-items:center;
-gap:4%;
-}
-.section-2 > *{
-flex-basis:48%;
-}
-
-.section-3{
-display:flex;
-flex-flow:row wrap;
-align-items:center;
-gap:4%;
-}
-.section-3 > *{
-flex-basis:48%;
-}
-.left-part-1 h2{
-    font-size: 2rem;
-}
-.left-part-2 h3{
-    font-size: 2rem;
-}
-.right-part-3 h3{
-    font-size: 2rem;
-}
-.left-part-4 h3{
-    font-size: 2rem;
-}
-
-.section-4{
-display:flex;
-flex-flow:row wrap;
-align-items:center;
-gap:4%;
-}
-.section-4 > *{
-flex-basis:48%;
-}
-.container p{
-    font-size: 1.5rem
-    }
-}
 
 /*Onwubiko Okem Precious*/
 
@@ -396,8 +441,6 @@ div.adj{
     margin-top: 60px;
 }
 
-.third_icon
-
 div.enjoy{
     display: flex;
     justify-content: center;
@@ -414,20 +457,6 @@ div.enjoy{
 }
 
 footer{
-    background-color: #4334A6;
-    height: 150px;
-    text-align: center;
-    font-weight: 500;
-    font-family: 'Hind', sans-serif;
-    color: white;
-}
-
-footer h2{
-    position: relative;
-    top: 120px;
-    font-size: 1.1em;
-}
-/* footer{
     width: 100%;
     background-color: #1E0B94;
     padding-top: 40px;
@@ -439,8 +468,7 @@ footer > h2{
     font-weight: 500;
     font-size: 30px;
     color: #FFFFFF;
-} */
-
+}
 
 .third_flex{
     margin: 60px auto;
@@ -828,26 +856,8 @@ a:hover{
     body div.nums{
         margin-top: 50px;
     }
-
-    footer{
-        height: 312px;
-        background-color: #4334A6;
-        text-align: center;
-        font-family: 'Hind', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        color: white;  
-        width: 100%;      
-    }
-
-    footer h2{
-        margin-top: 300px;
-        position: relative;
-        top: 250px;
-    }
-
 }
+
 
 /*@media(min-width: 425px){
     .thisdiv{

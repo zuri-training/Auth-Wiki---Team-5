@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation Page</title>
     <link rel="stylesheet" href="{% static 'css/unauth_Documentation.css' %}"/>
-    <script src="script.js" defer></script>
+    <script src="{% static 'script.js' %}" defer></script>
     <script src="https://use.fontawesome.com/96d57cb5c7.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap"
@@ -70,15 +70,18 @@
         consectetur.
       </p>
     </div>
+    <div class="bottom-buttons">
     <div class="buttons">
       <a href="{% url 'signup' %}"><button class="download">Download</button></a>
       <button class="viewExample">View Example</button>
     </div>
     <div class="icons">
-      <i id="likes"><img id="vector" src="{% static 'images/Vector.svg' %}" alt="likes"><span class="iconTxt" >1.2k likes</span></i>
-      <i id="comments"><img id= "moreSquare" src="{% status 'images/more-square.png' %}" alt="comment"><span class="iconTxt">800 comments</span></i>
-      <i id="downloads"><img id="smileys" src="{% status 'images/smileys.png' %}" alt="downloads"><span class="iconTxt">500 Vivvera eget</span></i>
+      <i id="likes"><img id="vector" src="{% static 'images/Vector.svg' %}" alt="likes"><span class="iconTxt" >0</span></i>
+      <i id="comments"><img id= "moreSquare" src="{% status 'images/more-square.png' %}" alt="comment"><span class="iconTxt">0</span></i>
+      <i id="downloads"><img id="smileys" src="{% status 'images/smileys.png' %}" alt="downloads"><span class="iconTxt">0</span></i>
     </div>
+  </div>
+  <div></div>
   </body>
  </main>
 {% endblock content %} 

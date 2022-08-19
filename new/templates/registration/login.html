@@ -3,31 +3,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-{% block content %}
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+{% block content %}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://api.fontshare.com/v2/css?f[]=hind@500&f[]=pilcrow-rounded@600&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"/>
     <link  href="{% static 'css/login.css' %}" rel="stylesheet"/>
   </head>
   <body>
     
   
-    <div class="totalcontainer">
-      <div class="container">
+    <div class="main-container" style="background-image: url({% static 'images/backgroundimage.png' %}); background-size: cover">
+      <div class="container" style="background-image: url({% static 'images/backgroundimage.png' %}); background-size: cover">
         <h3>
           <span style="color: #1e0b94">Welcome back to</span>
           <span style="color: #1e0b94">auth</span
           ><span style="color: #00b4d8">Wiki</span>
         </h3>
-        <div class="formcontainer">
+        <div class="formcontainer" style="background-image: url({% static 'images/backgroundimage.png' %}); background-size: cover">
           <form method="post">
               {% csrf_token %}
               {{ form.as_p}}
@@ -50,7 +48,7 @@
             /><br /><br />
             -->
             <button type="submit" class="registerbtn">Continue</button>
-            <p><h4>Forgot your password! Click <a href="{% url 'password_change' %}">here</a></h4></p>
+            <p><h5>Forgot your password! Click <a href="{% url 'password_reset' %}" style="color:blue">here</a></h5></p>
           </form>
         </div>
   

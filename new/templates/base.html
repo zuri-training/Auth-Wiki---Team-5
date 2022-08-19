@@ -6,20 +6,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Base</title>
+  <title>Authwiki</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=hind@500&f[]=pilcrow-rounded@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   {% if user.is_authenticated %}
   <nav>
     <div class="logo"><span>auth</span>Wiki</div>
         <div class="search-bar">
-            <input type="search" name="" id="" placeholder="search">
-            <img src="{% static 'images/magnifying-glass-solid(1).svg' %}" alt="" width="15px">
+          <form method=POST action="{% url 'search-results' %}" style="display:flex">
+            {% csrf_token %}
+           <input type="search" name="searched" id="" placeholder="search">
+           <button type="submit" value=""><i class="fa fa-search" style="float: right"></i></button>
+         </form>
         </div>
         <div class="menu-container">
             <ul> 
@@ -29,13 +33,13 @@
               <li><a href="{% url 'documentation' %}">Documentation</a></li>
             </ul>
         </div>
-          <a href="{% url 'signup' %}" class="get-started">Get Started</a>
           <h2 style="color:red"> Hi {{ user.username }}!</h2>
-           <p><a href="{% url 'logout' %}">Log Out</a></p>
+          <a href="{% url 'logout' %}" class="get-started">Log out</a>
+          
+           
           <div class="hamburger-menu">
             <img src="{% static 'images/icon.svg' %}" alt="">
         </div>
-        {% comment %} <script src="{% static 'signup.js' %}" defer></script> {% endcomment %}
     </nav>
     <hr>
                            
@@ -43,8 +47,11 @@
   <nav>
     <div class="logo"><span>auth</span>Wiki</div>
      <div class="search-bar">
-        <input type="search" name="" id="" placeholder="search">
-        <img src="{% static 'images/magnifying-glass-solid(1).svg' %}" alt="" width="15px">
+      <form method=POST action="{% url 'search-results' %}" style="display:flex">
+        {% csrf_token %}
+       <input type="search" name="searched" id="" placeholder="search">
+       <button type="submit" value=""><i class="fa fa-search" style="float: right"></i></button>
+     </form>
       </div>
      <div class="menu-container">
          <ul> 
@@ -59,7 +66,6 @@
         <div class="hamburger-menu">
           <img src="{% static 'images/icon.svg' %}" alt="">
       </div>
-      {% comment %} <script src="{% static 'signup.js' %}" defer></script> {% endcomment %}
   </nav>
   <hr>
   {% endif %}
