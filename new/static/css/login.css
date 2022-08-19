@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+/* 
+ background: #4434A6;
+ background: linear-gradient(0deg, #1E0B94, #1E0B94),
+linear-gradient(0deg, #00B4D8, #00B4D8);
+*/
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Hind', sans-serif;
+    font-family: 'Pilcrow Rounded', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    font-family: 'Hind', sans-serif;
+    border-bottom: 1px solid #4434A6;
+}
+.logo {
+    color:#00B4D8;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.logo > span{
+    color:#1E0B94;
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    color: #353434;
+    align-items: center;
+    padding-right: 80px;
+}
+input{
+    border: none;
+    width: 100%;
+    outline: none; 
+}
+li{
+    padding: 0.2em;
+    border-width: 0 0 6px 0 ;
+    border-style: solid;
+    border-color: white;
+}
+li:hover{
+    border-color: #4434A6;
+    /* padding-bottom: 0.1em; */
+    cursor: pointer;   
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+}
+.hamburger-menu{
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .search-bar{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        right: 1em;
+        padding: 1.2em 0;
+        border-radius: 0.3em;
+        box-shadow: 0 0 4px black;
+        width: 11em;
+        height: 100%;
+        background-color: #FFFFFF;
+    }
+    .show-ul{
+        display: flex;
+    }
+    li{
+        width: 100%;
+        padding: 0.5em 1.2em;
+        border: none;
+    }
+    li:hover{
+        background: #CAC5EB;
+    }
+}
+.main-container{
+  padding: 25px;
+  width: 40%;
+  margin: auto;
+  margin-top: 100px;
+}
+h1{
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .main-container {
+    width: 80%;
+  }
+}
+input[type=text], input[type=password]{
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+}
+.formcontainer {
+  width: 100%;
+  justify-content: center;
+}
+.registerbtn {
+  padding: 12px 34px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  background-color: #4434a6;
+}
+.imagecontainer {
+  margin: auto;
+  display: flex;
+  justify-content: center;  
+}
+.forgotten{
+  text-decoration: underline;
+}

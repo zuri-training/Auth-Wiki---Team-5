@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block content %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link href="https://api.fontshare.com/v2/css?f[]=hind@500&f[]=pilcrow-rounded@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e0bdeca38.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    
+
+        
+     <section id="main">
+        <div class="main-text">
+            <h1 id="contact">How can we <span>help you</span>?</h1>
+            <h4>Explore our Help Desk to learn more on how Auth_Wiki
+                can make your project easier and productive
+            </h4>
+        </div>
+        <div class="textareas">
+            <form action="/Authwiki/contact-us/" method="POST">
+                {% csrf_token %}
+                <label for="enquiries"><b><small>Type of enquiry</span></small></b></label>
+                <select id="enquiries">
+                    <option value="" selected disabled hidden>Select a category</option>
+                    <option value="Code Error">General Error</option>
+                    <option value="Code Error">Language Error</option>
+                    <option value="Code Error">Compatibility Error</option>
+                    <option value="Code Error">Other</option>
+                </select>
+                <label for="username"><b><small>Username</small></b>
+                    <input type="text" name="username" placeholder="Username (optional)">
+                </label>
+                <label for="email"><b><small>Email Required <span style="color:red">*</span></small></b>
+                    <input type="email" name="email" placeholder="xyz@gmail.com" required>
+                </label>
+                <label for="help text">
+                    <textarea id="multiline" name="content" placeholder="What can we help you with?" rows="12" cols="35"></textarea>
+                </label>
+                <input type="submit" value="Continue">
+            </form>
+        </div>
+    </section>
+
+    <section id="other">
+        <h2>Looking for something in particular?</h2>
+
+        <div class="boxes">
+            <div class="box-one">
+                <h2><a href="#">Features</a></h2>
+                <h4>Download code languages</h4>
+           </div>
+           
+        <div class="box-two">
+            <h2><a href="#">Documentation</a></h2>
+            <h4>Watch tutorials on how it works</h4>
+        </div>
+        </div>
+    </section>
+{% endblock content %}
+</body>
+</html> 

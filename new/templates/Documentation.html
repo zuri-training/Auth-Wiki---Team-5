@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{% block content %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="{% static 'css/Documentation.css' %}" />
+    <script src="{% static 'script.js' %}" defer></script>
+    <script src="https://use.fontawesome.com/96d57cb5c7.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap"
+      rel="stylesheet"/>
+      <link href="https://api.fontshare.com/v2/css?f[]=hind@500&f[]=pilcrow-rounded@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>AUTH WIKI HTTP BEARER</h2>
+    </header>
+    <section>
+    <div class="httpBearer">
+      <h3>HTTP Bearer authentication strategy for AuthWiki.</h3>
+      <p>
+        This module lets you authenticate HTTP requests using bearer tokens, as
+        specified by RFC 6750, in your Node.js applications. Bearer tokens are
+        typically used protect API endpoints, and are often issued using OAuth
+        2.0.
+      </p>
+      <p>
+        By plugging into AuthWiki, bearer token support can be easily and
+        unobtrusively integrated into any application or framework that supports
+        Connect-style middleware, including Express.
+      </p>
+    </div>
+    <div class="documentation">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+        natoque tortor egestas quis nisl quis velit. Quis vitae porttitor
+        vestibulum morbi. Tellus, phasellus urna amet malesuada tristique purus
+        eu quis nisl. Et aliquam volutpat quisque id. Netus sed sed feugiat
+        consectetur.
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+        natoque tortor egestas quis nisl quis velit. Quis vitae porttitor
+        vestibulum morbi. Tellus, phasellus urna amet malesuada tristique purus
+        eu quis nisl. Et aliquam volutpat quisque id. Netus sed sed feugiat
+        consectetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+        natoque tortor egestas quis nisl quis velit. Quis vitae porttitor
+        vestibulum morbi. Tellus, phasellus urna amet malesuada tristique purus
+        eu quis nisl. Et aliquam volutpat quisque id. Netus sed sed feugiat
+        consectetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+        natoque tortor egestas quis nisl quis velit. Quis vitae porttitor
+        vestibulum morbi. Tellus, phasellus urna amet malesuada tristique purus
+        eu quis nisl. Et aliquam volutpat quisque id. Netus sed sed feugiat
+        consectetur.
+      </p>
+    </div>
+    <div class="bottom-buttons">
+    <div class="buttons">
+      <button class="download">Download</button>
+      <button class="viewExample">View Example</button>
+    </div>
+    <div class="icons">
+      <div
+  data-lyket-type="updown"
+  data-lyket-id="my-second-post"
+  data-lyket-namespace="blog"
+></div>
+
+<div
+data-lyket-type="like"
+data-lyket-id="my-third-post"
+data-lyket-namespace="blog"
+data-lyket-template="twitter"
+></div>
+
+<div
+  data-lyket-type="clap"
+  data-lyket-id="my-third-post"
+  data-lyket-namespace="blog"
+  data-lyket-template="medium"
+></div> 
+    </div>
+  </div>
+</section>
+  <footer><script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_ddb337c682298643e76fce4b63eca3" defer></script></footer>
+  </body>
+{% endblock content %}
+</html>

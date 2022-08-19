@@ -1,4 +1,13 @@
 
+# Auth-Wiki---Team-5
+Auth Wiki 1.0 - A platform to give developers access to a library of authentication codes.
+
+# Acknowledgements
+The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
+
+## Back-End Developers Repository
+In a nutshell, these are individuals who are tasked with developing logic for the platform.
+
 # Auth Wiki Team 5
 Auth Wiki 1.0 - A platform to give developers access to a library of authentication codes.
 
@@ -8,8 +17,8 @@ Auth Wiki 1.0 - A platform to give developers access to a library of authenticat
 Username: authwiki5@gmail.com
 Password: thebestserver5
 
-# Acknowledgements
-The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
+## Link to DB Schema
+### (https://drive.google.com/file/d/1ZwsTHjCHYjBjU_-KqC7tIt191aXepYmA/view?usp=sharing)
 
 # Link to final project video
 https://drive.google.com/file/d/1RuBKYmvRRJKCGhBAw2bUsejUFPfw72cq/view?usp=sharing
@@ -29,7 +38,7 @@ https://drive.google.com/file/d/1RuBKYmvRRJKCGhBAw2bUsejUFPfw72cq/view?usp=shari
 ## Branches
 Product Design <br />
 Front-End <br />
-Back-End <br />
+
 
 # Table of Contents
 General Information <br />
