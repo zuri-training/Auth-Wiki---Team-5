@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block content %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link href="https://api.fontshare.com/v2/css?f[]=hind@500&f[]=pilcrow-rounded@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e0bdeca38.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    
+{% comment %} {% block content %} {% endcomment %}
+        
+     <section id="main">
+        <div class="main-text">
+            <h1 id="contact">How can we <span>help you</span>?</h1>
+            <h4>Explore our Help Desk to learn more on how Auth_Wiki
+                can make your project easier and productive
+            </h4>
+        </div>
+        <div class="textareas">
+            <form>
+                {% csrf_token %}
+                <label for="enquiries">Type of enquiry</label>
+                <select id="enquiries">
+                    <option value="" selected disabled hidden></option>
+                    <option value="Code Error">General Error</option>
+                    <option value="Code Error">Language Error</option>
+                    <option value="Code Error">Compatibility Error</option>
+                    <option value="Code Error">Other</option>
+                </select>
+                <label for="username">
+                    <input type="text" placeholder="Username">
+                </label>
+                <label for="email">
+                    <input type="email" placeholder="xyz@gmail.com">
+                </label>
+                <label for="help text">
+                    <textarea id="multiline" placeholder="What can we help you with?" rows="12" cols="35"></textarea>
+                </label>
+                <input type="submit" value="Continue">
+            </form>
+        </div>
+    </section>
+
+    <section id="other">
+        <h2>Looking for something in particular?</h2>
+
+        <div class="boxes">
+            <div class="box-one">
+                <h2><a href="#">Features</a></h2>
+                <h4>Download code languages</h4>
+           </div>
+           
+        <div class="box-two">
+            <h2><a href="#">Documentation</a></h2>
+            <h4><a href="#">Watch tutorials on how it works</a></h4>
+        </div>
+        </div>
+    </section>
+{% endblock content %}
+</body>
+</html> 

@@ -1,14 +1,44 @@
+
 # Auth-Wiki---Team-5
 Auth Wiki 1.0 - A platform to give developers access to a library of authentication codes.
-
-## Back-End Developers Repository
-In a nutshell, these are individuals who are tasked with developing logic for the platform.
 
 # Acknowledgements
 The project idea belongs to Zuri. The project is being developed under Zuri’s supervision and advice.
 
+## Back-End Developers Repository
+In a nutshell, these are individuals who are tasked with developing logic for the platform.
+
+# Auth Wiki Team 5
+Auth Wiki 1.0 - A platform to give developers access to a library of authentication codes.
+
+# Link to the site
+(http://52.21.130.244:8000/)
+
+Username: authwiki5@gmail.com
+Password: thebestserver5
+
 ## Link to DB Schema
 ### (https://drive.google.com/file/d/1ZwsTHjCHYjBjU_-KqC7tIt191aXepYmA/view?usp=sharing)
+
+# Link to final project video
+https://drive.google.com/file/d/1RuBKYmvRRJKCGhBAw2bUsejUFPfw72cq/view?usp=sharing
+
+# Classic project
+(https://github.com/orgs/zuri-training/projects/419)
+
+## Link to team roster
+### (https://docs.google.com/spreadsheets/d/1Oj3OVNha6ZB7HiJ2k6R_qJ97ynUDdYB4/edit?usp=sharing&ouid=106406755546135524470&rtpof=true&sd=true)
+## Link to team sheet
+### (https://docs.google.com/spreadsheets/d/19xiYTBeIr6JHzlSXGWqzSiizn6FhFQkO/edit?usp=sharing&ouid=106406755546135524470&rtpof=true&sd=true)
+## Link to Presentation Slides
+### (https://docs.google.com/presentation/d/1bpN89WSbWrrzEP9o5CzR6TzZMabjZt3N/edit?usp=sharing&ouid=106406755546135524470&rtpof=true&sd=true)
+## Link to Project Documentation
+### (https://docs.google.com/document/d/1YTNyTpnIPi5A4oDCZDQSd5j2mO-1Z2EhtmxahlAiZ-0/edit?usp=sharing)
+
+## Branches
+Product Design <br />
+Front-End <br />
+
 
 # Table of Contents
 General Information <br />
